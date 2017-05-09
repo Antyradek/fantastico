@@ -1,4 +1,24 @@
 Częste błędy.
 Może kiedyś będzie można to oskryptować i zrobić mini-weryfikator.
 
-puki zamiast póki
+Ortografia:
+puki -> póki
+Ziemianin
+Felicjanin
+
+Przecinki:
+, lub -> lub
+między {...}, a {...} -> między {...} a {...}
+gorzej, niż lepiej -> gorzej niż lepiej (samo niż)
+pomimo, że -> pomimo że
+(jak?)
+(już?)
+gdzie {...}, który {...} -> gdzie {...} który {...}
+
+Przecinki często pojawiają się przed imiesłowami.
+
+Jakiś sposób wykrywania powtórzeń.
+
+Wykrywanie interpunkcji typu spacja kropka, spacja przecinek, inny znak kropka.
+
+Lista akcji gębowych i dbanie o dialogi.
