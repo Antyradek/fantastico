@@ -1,14 +1,29 @@
 % makra używane w projekcie
 
 %odpowiednio sformatowane myślniki do dialogów.
-  \newcommand\ds{---}
-  \newcommand\dm{---}
-  \newcommand\de{}
+  \newcommand{\ds}{---}
+  \newcommand{\dm}{---}
+  \newcommand{\de}{}
  
-\newcommand\divider{
+%podzielenie tekstu
+\newcommand{\divider}{
 \begin{center}
 ***
 \end{center}
 }
 
-\newcommand\censor{\textblock\textblock\textblock\textblock}
+%blok cenzury
+\newcommand{\censor}{\textblock\textblock\textblock\textblock}
+
+%didaskalia
+\newcommand{\dida}[1] {\emph{#1}}
+
+%podtytuł
+\newcommand{\smalltitle}[1] {\textbf{\textsc{#1\\}}}
+
+%wypowiedzi bohaterów
+\newcommand{\chardokt}{DOKTOR EVILION\\}
+\newcommand{\charmik}{MIKOŁAJ\\}
+\newcommand{\charprzy}{PRZYDUPAS\\}
+\newcommand{\charnad}{NADAR\\}
+\newcommand{\charfer}{FERRO\\}
