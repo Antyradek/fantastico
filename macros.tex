@@ -1,14 +1,17 @@
 % makra używane w projekcie
 
+%wstęp do rozdziału
+\newcommand{\info}[1] {\textsl{#1}\\ \bigskip}
+
 %odpowiednio sformatowane myślniki do dialogów.
-  \newcommand{\ds}{---}
-  \newcommand{\dm}{---}
-  \newcommand{\de}{}
+\newcommand{\ds}{---}
+\newcommand{\dm}{---}
+\newcommand{\de}{}
  
 %podzielenie tekstu
 \newcommand{\divider}{
 \begin{center}
-***
+\ding{118}
 \end{center}
 }
 
@@ -16,7 +19,7 @@
 \newcommand{\censor}{\textblock\textblock\textblock\textblock}
 
 %didaskalia
-\newcommand{\dida}[1] {\emph{#1}}
+\newcommand{\dida}[1] {\textit{#1}}
 
 %podtytuł
 \newcommand{\smalltitle}[1] {\textbf{\textsc{#1\\}}}
