@@ -1,7 +1,7 @@
 RTF = latex2rtf
 PDF = pdflatex
 
-DOCS = main.tex macros.tex s01.tex s02.tex s03.tex s04.tex s05.tex
+DOCS = main.tex macros.tex s01.tex s02.tex s03.tex s04.tex s05.tex s06.tex
 MAIN = main.tex
 
 all: main.pdf main.rtf
