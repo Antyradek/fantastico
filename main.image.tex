@@ -1,0 +1,42 @@
+\newif\ifimagen\imagentrue
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}\usepackage[polish]{babel}\usepackage{hyperref}\usepackage{fancyhdr}\usepackage{pmboxdraw}\usepackage{pifont}\usepackage{graphicx}\usepackage{niceframe}\usepackage{aurical}\newcommand{\info}[1]{\textsl{#1}\bigskip}
+\newcommand{\ds}{---}
+\newcommand{\dm}{---}
+\newcommand{\de}{}
+\newcommand{\divider}{
+\bigskip
+}
+\newcommand{\censor}{\textblock\textblock\textblock\textblock}
+\newcommand{\dida}[1]{\textit{#1}}
+\newcommand{\smalltitle}[1]{\textbf{\textsc{#1\\}}}
+\newcommand{\chardok}{DOKTOR EVILION\\}
+\newcommand{\charszam}{DOKTOR SZAMBONURKOLOGII JANUSZ EVILION\\}
+\newcommand{\charmik}{MIKOŁAJ\\}
+\newcommand{\charprzy}{PRZYDUPAS\\}
+\newcommand{\chardoc}{DOCENT PRZYDUPAS\\}
+\newcommand{\charnad}{NADAR\\}
+\newcommand{\charfer}{FERRO\\}
+\newcommand{\machine}[1]{\textbf{\texttt{#1}}}
+\newcommand{\illustration}[1]{\includegraphics[width=\textwidth]{#1}\bigskip}
+\newcommand{\weirdchar}[1]{\includegraphics[height=0.9em]{chars/#1.pdf}}
+
+\pagestyle{empty}
+\thispagestyle{empty}
+\begin{document}
+\includegraphics[width=\textwidth]{./img/werewolf.png}
+\clearpage% page: 0
+\includegraphics[width=\textwidth]{./img/tort.png}
+\clearpage% page: 1
+\includegraphics[height=0.9em]{./chars/kula.pdf}
+\clearpage% page: 2
+\includegraphics[height=0.9em]{./chars/monster.pdf}
+\clearpage% page: 3
+\includegraphics[height=0.9em]{./chars/kula.pdf}
+\clearpage% page: 4
+\includegraphics[height=0.9em]{./chars/profesor.pdf}
+\clearpage% page: 5
+\includegraphics[height=0.9em]{./chars/monster_language.pdf}
+\clearpage% page: 6
+%Options: 
+\end{document}
