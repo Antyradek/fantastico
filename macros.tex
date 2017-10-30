@@ -1,5 +1,9 @@
 % makra używane w projekcie
 
+% Głupie wyjście
+\newif\ifdumb
+%\dumbtrue
+
 %wstęp do rozdziału
 \newcommand{\info}[1]{\textsl{#1}\bigskip}
 
@@ -14,7 +18,11 @@
 %podzielenie tekstu
 \newcommand{\divider}{
 \begin{center}
+\ifdumb
+***
+\else
 	\FourStarOpen
+\fi
 \end{center}
 }
 
@@ -26,7 +34,13 @@
 }
 
 %blok cenzury
-\newcommand{\censor}{\textblock\textblock\textblock\textblock}
+\newcommand{\censor}{
+\ifdumb
+	[CENZURA]
+\else
+	\textblock\textblock\textblock\textblock
+\fi
+}
 
 %didaskalia
 \newcommand{\dida}[1]{\textit{#1}}
@@ -50,7 +64,41 @@
 \newcommand{\illustration}[1]{\includegraphics[width=\textwidth]{#1}\bigskip}
 
 %dziwny znak
-\newcommand{\weirdchar}[1]{\includegraphics[height=0.9em]{chars/#1.pdf}}
+\newcommand{\weirdchar}[1]{
+\ifdumb
+	\texttt{[NIEZROZUMIAŁY ZNAK]}
+\else
+	\includegraphics[height=0.9em]{chars/#1.pdf}
+\fi
+}
 
 %inny język
 \newcommand{\differentlan}[1]{\emph{#1}}
+
+%miła ramka
+\newcommand{\letterframe}[1]{
+\ifdumb
+	\begin{em}
+	#1
+	\end{em}
+\else
+	\curlyframe{
+	\begin{Fontlukas}
+	#1
+	\end{Fontlukas}}
+\fi
+}
+
+%elegancka ramka
+\newcommand{\elegantframe}[1]{
+\ifdumb
+	\begin{em}
+	#1
+	\end{em}
+\else
+	\niceframe{
+	\begin{Fontlukas}
+	#1
+	\end{Fontlukas}}
+\fi
+}
