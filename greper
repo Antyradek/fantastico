@@ -10,6 +10,7 @@ $GREP "na prawdę" $1						#Naprawdę
 $GREP "napewno" $1							#Na pewno
 	
 $GREP "nie możliwe" $1						#Niemożliwe
+$GREP "było by" $1							#Byłoby
 $GREP "kuł" $1								#Kłuła
 $GREP "pola" $1								#Polacy
 $GREP "amery" $1							#Amerykanie
