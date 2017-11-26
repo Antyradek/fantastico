@@ -4,6 +4,11 @@
 \newif\ifdumb
 %\dumbtrue
 
+%inna nazwa rozdziałów
+\makeatletter
+\renewcommand{\@chapapp}{Opowiadanie}
+\makeatother
+
 %wstęp do rozdziału
 \newcommand{\info}[1]{\textsl{#1}\bigskip}
 
@@ -61,7 +66,10 @@
 \newcommand{\machine}[1]{\textbf{\texttt{#1}}}
 
 %ilustracja
-\newcommand{\illustration}[1]{\includegraphics[width=\textwidth]{#1}\bigskip}
+\newcommand{\illustration}[1]{\begin{center}
+                              	\includegraphics[width=\textwidth]{#1}\bigskip
+                              \end{center}}
+
 
 %dziwny znak
 \newcommand{\weirdchar}[1]{
