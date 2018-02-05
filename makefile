@@ -11,7 +11,11 @@ main.pdf: $(DOCS)
 	$(PDF) -halt-on-error -output-format pdf $<  
 	
 main.rtf: $(DOCS)
-	latex2rtf $<
+	$(RTF) $<
 
 main.html: $(DOCS)
 	$(HTML) $<
+
+.PHONY: clean
+clean:
+	rm -f *.aux *.log *.backup *.htoc *.out *.toc *.haux main.pdf main.rtf main.html
