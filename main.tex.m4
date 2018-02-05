@@ -14,7 +14,7 @@
 \pagestyle{fancy}
 
 \input{macros.tex}
-
+ifdef(`dumb', `\ifdumb', `')
 
 \begin{document}
 \title{Fantastyczne historie}

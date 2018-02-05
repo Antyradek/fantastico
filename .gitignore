@@ -10,3 +10,5 @@
 *.dvi
 *.image.tex
 .*
+main.tex
+dumbmain.tex
