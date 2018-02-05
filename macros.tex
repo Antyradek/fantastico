@@ -1,4 +1,4 @@
-% makra używane w projekcie
+ % makra używane w projekcie
 
 % Głupie wyjście
 \newif\ifdumb
@@ -9,7 +9,11 @@
 \makeatother
 
 %wstęp do rozdziału
-\newcommand{\info}[1]{\textsl{#1}\bigskip}
+\newcommand{\info}[1]
+{
+	\textsl{#1}
+	\bigskip
+}
 
 %odpowiednio sformatowane myślniki do dialogów.
 \newcommand{\ds}{\par ---}
@@ -20,30 +24,33 @@
 \newenvironment{dialogue}{}{\par}
  
 %podzielenie tekstu
-\newcommand{\divider}{
-\begin{center}
-\ifdumb
-***
-\else
-	\FourStarOpen
-\fi
-\end{center}
+\newcommand{\divider}
+{
+	\begin{center}
+		\ifdumb
+			***
+		\else
+			\FourStarOpen
+		\fi
+	\end{center}
 }
 
 %znacznik
-\newcommand{\marker}{
-\begin{center}
-	--- ! ! ! ---
-\end{center}
+\newcommand{\marker}
+{
+	\begin{center}
+		--- ! ! ! ---
+	\end{center}
 }
 
 %blok cenzury
-\newcommand{\censor}{
-\ifdumb
-	[CENZURA]
-\else
-	\textblock\textblock\textblock\textblock
-\fi
+\newcommand{\censor}
+{
+	\ifdumb
+		[CENZURA]
+	\else
+		\textblock\textblock\textblock\textblock
+	\fi
 }
 
 %didaskalia
@@ -65,47 +72,53 @@
 \newcommand{\machine}[1]{\textbf{\texttt{#1}}}
 
 %ilustracja
-\newcommand{\illustration}[1]{\begin{center}
-                              	\includegraphics[width=\textwidth]{#1}\bigskip
-                              \end{center}}
+\newcommand{\illustration}[1]
+{
+	\begin{center}
+		\includegraphics[width=\textwidth]{#1}\bigskip
+	\end{center}
+}
 
 
 %dziwny znak
-\newcommand{\weirdchar}[1]{
-\ifdumb
-	\texttt{[NIEZROZUMIAŁY ZNAK]}
-\else
-	\includegraphics[height=0.9em]{chars/#1.pdf}
-\fi
+\newcommand{\weirdchar}[1]
+{
+	\ifdumb
+		\texttt{[NIEZROZUMIAŁY ZNAK]}
+	\else
+		\includegraphics[height=0.9em]{chars/#1.pdf}
+	\fi
 }
 
 %inny język
 \newcommand{\differentlan}[1]{\emph{#1}}
 
 %miła ramka
-\newcommand{\letterframe}[1]{
-\ifdumb
-	\begin{em}
-	#1
-	\end{em}
-\else
-	\curlyframe{
-	\begin{Fontlukas}
-	#1
-	\end{Fontlukas}}
-\fi
+\newcommand{\letterframe}[1]
+{
+	\ifdumb
+		\begin{em}
+			#1
+		\end{em}
+	\else
+		\curlyframe{
+		\begin{Fontlukas}
+			#1
+		\end{Fontlukas}}
+	\fi
 }
 
 %elegancka ramka
-\newcommand{\elegantframe}[1]{
-\ifdumb
-	\begin{em}
-	#1
-	\end{em}
-\else
-	\niceframe{
-	\begin{Fontlukas}
-	#1
-	\end{Fontlukas}}
-\fi
+\newcommand{\elegantframe}[1]
+{
+	\ifdumb
+		\begin{em}
+			#1
+		\end{em}
+	\else
+		\niceframe{
+		\begin{Fontlukas}
+			#1
+		\end{Fontlukas}}
+	\fi
 }

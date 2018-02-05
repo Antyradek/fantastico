@@ -14,6 +14,9 @@ $GREP "było by" $1							#Byłoby
 $GREP "kuł" $1								#Kłuła
 $GREP "pola" $1								#Polacy
 $GREP "amery" $1							#Amerykanie
-$GREP "wyżyn" $1							#Wyrzynanie ludzkości
+$GREP "wyżyn" $1							#Wyrzynanie (ludzkości)
 
 $GREP "''[\.\?\!]" $1 						#Znak interpunkcyjny poza cudzysłowem
+
+$GREP ", lub" $1							#Przecinek przed lub
+$GREP ", oraz" $1							#Przecinek przed oraz

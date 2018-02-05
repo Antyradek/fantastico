@@ -2,20 +2,20 @@ RTF = latex2rtf
 PDF = pdflatex
 HTML = hevea
 
-DOCS = main.tex s01.tex s02.tex s03.tex s04.tex s05.tex s06.tex s07.tex
+DOCS = macros.tex s01.tex s02.tex s03.tex s04.tex s05.tex s06.tex s07.tex
 MAIN = main.tex
 DUMBMAIN = dumbmain.tex
 MAINM4 = main.tex.m4
 
-all: main.pdf main.rtf main.html
+all: main.pdf dumbmain.rtf dumbmain.html
 
 main.pdf: $(MAIN) $(DOCS) 
 	$(PDF) -halt-on-error -output-format pdf $<  
 	
-main.rtf: $(DUMBMAIN) $(DOCS) 
+dumbmain.rtf: $(DUMBMAIN) $(DOCS) 
 	$(RTF) $<
 
-main.html: $(DUMBMAIN) $(DOCS) 
+dumbmain.html: $(DUMBMAIN) $(DOCS) 
 	$(HTML) $<
 
 $(MAIN): $(MAINM4)
@@ -26,4 +26,4 @@ $(DUMBMAIN): $(MAINM4)
 	
 .PHONY: clean
 clean:
-	rm -f *.aux *.log *.backup *.htoc *.out *.toc *.haux main.pdf dumbmain.rtf dumbmain.html $(MAIN) $(DUMBMAIN) dumbmain.image.tex
+	rm -f *.aux *.log *.backup *.htoc *.out *.toc *.haux main.pdf dumbmain.rtf dumbmain.html $(MAIN) $(DUMBMAIN) *.image.tex
