@@ -2,7 +2,7 @@ RTF = latex2rtf
 PDF = pdflatex
 HTML = hevea
 
-DOCS = macros.tex s01.tex s02.tex s03.tex s04.tex s05.tex s06.tex s07.tex
+DOCS = macros.tex s01.tex s02.tex s03.tex s04.tex s05.tex s06.tex s07.tex s08.tex
 MAIN = main.tex
 DUMBMAIN = dumbmain.tex
 MAINM4 = main.tex.m4
