@@ -29,4 +29,5 @@ ifdef(`dumb', `\dumbtrue', `')
 	\input{s06.tex}
 	\input{s07.tex}
 	\input{s08.tex}
+	\input{s09.tex}
 \end{document}
