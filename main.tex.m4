@@ -31,4 +31,5 @@ ifdef(`dumb', `\dumbtrue', `')
 	\input{s08.tex}
 	\input{s09.tex}
 	\input{s10.tex}
+	\input{s11.tex}
 \end{document}
