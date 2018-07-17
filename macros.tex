@@ -9,11 +9,20 @@
 \makeatother
 
 %wstęp do rozdziału
-\newcommand{\info}[1]
+\newcommand{\info}[4]
 {
 	\textsl{#1}
+	\begin{description}
+		\item[Gatunek:] #2
+		\item[Długość:] #3 znaków
+		\item[Uniwersum:] #4
+	\end{description}
 	\bigskip
 }
+
+%neokreślone uniwersum
+\newcommand{\undefineduniversum}{\emph{Nieokreślone}}
+\newcommand{\quadreversumuniversum}{Quadreversum}
 
 %odpowiednio sformatowane myślniki do dialogów.
 \newcommand{\ds}{\par ---}

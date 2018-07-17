@@ -10,6 +10,7 @@
 \usepackage{bbding}
 \usepackage{aurical}
 \usepackage{niceframe}
+\usepackage[inline]{enumitem}
 
 \pagestyle{fancy}
 
