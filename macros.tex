@@ -1,4 +1,4 @@
- % makra używane w projekcie
+% makra używane w projekcie
 
 % Głupie wyjście
 \newif\ifdumb
@@ -134,6 +134,7 @@
 	\fi
 }
 
+%wewnętrzny tekst opowiadania, czy wiersza
 \newenvironment{poem}
 {
 	\begin{sl}
@@ -142,3 +143,6 @@
 	\end{quote}
 	\end{sl}
 }
+
+%duża litera na początku
+\newcommand{\begincapital}[1]{\lettrine[loversize=0.1, lhang=0.3, lines=3]{#1}{}}

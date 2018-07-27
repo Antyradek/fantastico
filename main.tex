@@ -2,6 +2,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[polish]{babel}
+\usepackage{lmodern}
+\usepackage{lettrine}
 \usepackage{textcomp}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
@@ -10,7 +12,7 @@
 \usepackage{bbding}
 \usepackage{aurical}
 \usepackage{niceframe}
-\usepackage[inline]{enumitem}
+
 
 \pagestyle{fancy}
 
