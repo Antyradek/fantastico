@@ -2,23 +2,23 @@
 
 #Ten program wykrywa i drukuje linie z najpopularniejszymi błędami
 
-GREP="grep --color=always --line-number --initial-tab"
+GREP="grep --color=always --line-number --initial-tab -i -E"
 
-$GREP "patrz[[:alpha:]]* się" $1			#Patrzyć na coś
-$GREP "dotk[[:alpha:]]* się" $1				#Dotknąć czegoś
-$GREP "puki" $1								#Póki
-$GREP "na prawdę" $1						#Naprawdę
-$GREP "napewno" $1							#Na pewno
-	
-$GREP "nie możliwe" $1						#Niemożliwe
-$GREP "było by" $1							#Byłoby
-$GREP "kuł" $1								#Kłuła
-$GREP "pola" $1								#Polacy
-$GREP "amery" $1							#Amerykanie
-$GREP "wyżyn" $1							#Wyrzynanie (ludzkości)
+$GREP "^patrz[[:alpha:]]* się" $1			#Patrzyć na coś
+$GREP "^dotk[[:alpha:]]* się" $1				#Dotknąć czegoś
+$GREP "^puki" $1								#Póki
+$GREP "^na prawdę" $1						#Naprawdę
+$GREP "^napewno" $1							#Na pewno
+$GREP "^nie możliwe" $1						#Niemożliwe
+$GREP "^było by" $1							#Byłoby
+$GREP "^kuł" $1								#Kłuła
+$GREP "^pola" $1								#Polacy
+$GREP "^amery" $1							#Amerykanie
+$GREP "^wyżyn" $1							#Wyrzynanie (ludzkości)
 
 $GREP "''[\?\!]" $1 						#Znak interpunkcyjny poza cudzysłowem
 $GREP "\.''" $1 							#Kropka wewnątrz cudzysłowu na końcu
 
 $GREP ", lub" $1							#Przecinek przed lub
 $GREP ", oraz" $1							#Przecinek przed oraz
+$GREP "^wstanie" $1						#W stanie

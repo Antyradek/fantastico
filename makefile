@@ -2,7 +2,7 @@ RTF = latex2rtf
 PDF = pdflatex
 HTML = hevea
 
-DOCS = macros.tex $(shell ls s[0-9][0-9].tex)
+DOCS = macros.tex $(shell ls *.tex)
 MAIN = main.tex
 DUMBMAIN = dumbmain.tex
 MAINM4 = main.tex.m4
