@@ -12,7 +12,7 @@
 \usepackage{bbding}
 \usepackage{aurical}
 \usepackage{niceframe}
-
+\usepackage{datetime}
 
 \pagestyle{fancy}
 
@@ -35,4 +35,5 @@ ifdef(`dumb', `\dumbtrue', `')
 	\input{house.tex}
 	\input{clocktower.tex}
 	\input{atom.tex}
+	\input{mine.tex}
 \end{document}

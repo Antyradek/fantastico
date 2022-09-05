@@ -28,6 +28,12 @@
 \newcommand{\ds}{\par ---}
 \newcommand{\dm}{---}
 \newcommand{\de}{}
+\newcommand{\dialog}[3]{
+	\par --- #1
+	\def\temp{#2}\ifx\temp\empty\else --- #2 \fi
+	\def\temp{#3}\ifx\temp\empty\else --- #3 \fi
+	\par
+}
 
 %lista dialogowa
 \newenvironment{dialogue}{}{\par}
